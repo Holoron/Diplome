@@ -6,9 +6,18 @@
 body{
     margin: 0;
 }
-
-
-h2{
+h1{
+    font-family: Fallout Regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 52px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+}
+h2,.second_tier a{
     font-family: Fallout Regular;
     font-style: normal;
     font-weight: normal;
@@ -17,8 +26,6 @@ h2{
     letter-spacing: 0.03em;
     margin: 0;
 }
-
-
 h3,h4,h5,h6{
     margin: 0   ;
     font-family: Fallout Regular;
@@ -29,23 +36,34 @@ h3,h4,h5,h6{
     letter-spacing: 0.04em;
     color: #000000;
 }
-
-/*.line-header-1 {*/
-    /*display: inline-flex;*/
-    /*max-height: 60px;*/
-/*}*/
-/*.line-header-1 img:nth-child(2){*/
-    /*padding-left: 26px;*/
-/*}*/
-
-.Logo img:nth-child(2){
-    padding-left: 22px;
+p,a{
+    font-family: Verdana;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: justify;
+    text-decoration: none;
+    color: #000000;
 }
 
+.header_tier{
+
+    margin-bottom: 40px;
+    height: 110px;
+    box-shadow: 0px 5px 20px rgba(50, 50, 50, 0.75);
+}
+.Logo{
+    height: 60px;
+}
+.Logo a:nth-child(2){
+    padding-left: 6px;
+}
 
 .TimeToHead{
     display: flex;
     align-self: center;
+
     /*padding-left: 87px;*/
 }
 .TimeToHead h4, .TimeToHead h3{
@@ -53,11 +71,171 @@ h3,h4,h5,h6{
     display: flex;
     margin: 0;
 }
-/*.TimeToHead h3:nth-last-child(1),.TimeToHead h4{*/
-    /*padding-left: 20px;*/
-/*}*/
 
-.Login{
-    align-self: center;
+.first_tier{
+    z-index: 2;
+    height: 60px;
+}
+.first_tier h2{
+    text-align: right;
+    padding-right: 40px;
+}
+
+.TimeToHead{
+    padding-left: 52px;
+}
+.TimeToHead div{
+    padding-left: 20px;
+    padding-right: 22px;
+
+}
+
+.second_tier{
+    z-index: 1;
+    background-color: #E3E1E1;
+    width: 100%;
+    top:0;
+    height: 50px;
+
+
+}
+.second_tier a{
+
+    display: block;
+    padding-top: 12px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.second_tier>.container>.row>.col:hover{
+    height: 50px;
+    background: #FBF9F9;
+    box-shadow: inset 0px 0px 20px rgba(10, 31, 104, 0.9);
+}
+.second_tier>.container>.row>.col:active{
+    height: 50px;
+    background: #767272;
+    box-shadow: none;
+    color: #E3DFDF;
+}
+
+.main_post{
+    background: #E3E1E1;
+    border-radius: 20px;
+    min-height: 240px;
+    height: 100%;
+    display: flex;
+    margin-bottom: 20px
+}
+.main_post_content{
+    vertical-align: top;
+    padding-top: 20px;
+    padding-right: 20px
+}
+.main_post img{
+    max-height: 200px;
+    border-radius: 20px;
+    margin: 20px 36px 20px 20px;
+}
+.main_post h2{
+    padding-bottom: 18px;
+}
+.main_post div{
+    min-height: 126px;
+    
+}
+.main_post p{
+    margin-top: 0px;
+    margin-bottom: 12px
+}
+.main_post p:nth-last-child(1){
+    margin-bottom: 2px;
+}
+.main_post a{
+    padding-bottom: 20px;
+    display: block;
+    text-align: right;
+    font-size: 18px;
+    line-height: 30px;
+}
+.main_post a:hover {
+    text-decoration-line: underline;
+}
+
+.button_more{
+    margin-top: 56px;
+    margin-bottom: 56px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 80px;
+    width: 200px;
+    background-color: #C4C4C4;
+    border-radius: 10px;
+
+
+}
+.button_more h2{
+    text-align: center;
+    padding-top: 25px;
+}
+.button_more:hover{
+    background: #EBEBEB;
+    box-shadow: inset 0px 0px 25px rgba(66, 22, 92, 0.75);
+}
+.button_more:active{
+    background: #6A5555;
+    box-shadow: none;
+}
+.button_more:active h2{
+    color: #FEF1F1;
+}
+
+
+.footer_tier{
+    box-shadow: 0px -8px 20px rgba(0, 0, 0, 0.75);
+    background: #E3E1E1;
+    height: 100px;
+}
+.footer_copy{
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+}
+.footer_copy div{
+    display: flex;
+    align-items: center;
+}
+.footer_copy h1{
+    line-height: 0;
+    padding-left: 16px;
+}
+.footer_copy div:nth-last-child(1){
+    width: 250px;
+    justify-content: space-between;
+}
+.footer_copy a{
+    height: 54px;
+}
+
+@media (max-width: 1200px){
+    .Logo a:nth-child(2){
+        display: none;
+    }
+    /*.TimeToHead{*/
+        /*padding-left: 10px;*/
+    /*}*/
+    .TimeToHead div{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .first_tier h2{
+        text-align: right;
+        padding-right: 0px;
+    }
+    h3,h4,h4,h6{
+        font-size: 16px;
+    }
+    h2,.second_tier a{
+        font-size: 20px;
+    }
 
 }
